@@ -1,0 +1,229 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+
+/* Navbar Section */
+
+.navbar-nav .nav-link:hover {
+    color: #ff6347; 
+    transition: color 0.3s ease;
+}
+
+.d-flex .nav-link:hover i {
+    color: #ff6347; 
+    transition: color 0.3s ease;
+}
+.background-image {
+    position: relative; 
+}
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem; 
+    font-weight: bold;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    white-space: nowrap;
+    text-align: center;
+  
+}
+
+section.py-5 {
+    padding-top: 3rem; /* Adjust as needed */
+    padding-bottom: 3rem; /* Adjust as needed */
+}
+.btn.hover-button {
+    background-color: rgb(0, 123, 255); /* Initial button color (Bootstrap primary color) */
+    color: white; /* Text color */
+    transition: background-color 0.3s ease; 
+}
+
+.btn.hover-button:hover {
+    background-color: rgb(233, 27, 27); 
+}
+
+
+/* Latest Products Section */
+.card {
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); 
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icon-container {
+    display: flex; 
+    justify-content: space-evenly; 
+    margin-top: 50px; 
+    align-items: center;
+    color: white; 
+    border-radius: 20px;
+    padding: 10px;
+    transform: translateY(20px); 
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.card:hover .icon-container {
+    transform: translateY(0); 
+    opacity: 1;
+}
+
+.icon-container  div{
+
+    background-color:orangered; 
+height: 40px;
+width: 200px;
+
+    transition: background-color 0.3s ease; 
+}
+.icon-container div:nth-child(1):hover {
+    background-color: skyblue; 
+}
+
+.icon-container div:nth-child(2):hover {
+    background-color: blue; 
+}
+
+
+.icon-container div:nth-child(3):hover {
+    background-color: green;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+/* Customer Reviews Section */
+.card.mb-4 {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-img {
+    width: 50px; 
+}
+
+/* Contact Section */
+
+.form-control {
+    border-radius: 5px;
+}
+
+.form-control .btn-dark {
+    background-color: #361ba4;
+    border: none;
+    
+}
+
+.btn-dark:hover {
+    background-color: #a42424;
+}
+.input-container {
+    position: relative;
+  }
+
+  .input-container input {
+    padding-right: 30px;
+  }
+
+  .input-container .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: gray;
+    visibility: hidden;
+  }
+
+  .input-container .icon.valid {
+    color: green;
+    visibility: visible;
+  }
+
+  .input-container .icon.invalid {
+    color: red;
+    visibility: visible;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #ccc;
+}
+
+footer a:hover {
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .background-image {
+        height: 300px; /* Reduce height for mobile view */
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}

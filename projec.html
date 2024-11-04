@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shopfy</title>
+    <link rel="stylesheet" href="project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <!--header part-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Flower Shopfy.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto"> <!-- Centered navbar -->
+              <li class="nav-item">
+                  <a class="nav-link" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#review">Review</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+          <div class="d-flex"> <!-- Right-side icons -->
+              <a href="#" class="nav-link me-2" aria-label="Favorites"><i class="bi bi-suit-heart-fill"></i></a>
+              <a href="#" class="nav-link me-2" aria-label="Shopping Cart"><i class="bi bi-cart"></i></a>
+              <a href="#" class="nav-link me-2" aria-label="Profile"><i class="bi bi-person-fill"></i></a>
+          </div>
+      </div>
+    </div>
+</nav>
+<!-- HOME Page-->
+      <section id="hero" class="hero-section py-5" style="background-image: url('../practice/projec/home-bg.jpg'); background-size: cover; background-position: center; color: rgb(233, 27, 27);">
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; "></div>
+            <div class="content-left" style="position: relative; z-index: 2; max-width: 50%; padding: 20px;">
+                <h1 class="display-4">Fresh Flowers</h1>
+                <p class="text-muted">Natural & Beautiful Flowers</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-primary hover-button rounded-pill">Shop Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--ABOUT Us Page-->
+    <section id="about" class="py-5">
+      <div class="container">
+          <h2 class="text-center">About <span class="text-primary">Us</span></h2>
+          <div class="row mt-4">
+              <div class="col-md-6 position-relative">
+                  <div class="video-container">
+                    <video id="aboutVideo" class="img-fluid" autoplay muted loop>
+                      <source src="../practice/projec/about-vid.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                  
+                      <div class="white-line"></div>
+                      <div class="watermark">Best Flower Seller</div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <h3>Why Choose Us?</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <a href="#" class="btn btn-outline-dark rounded-pill">Learn More</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--ICONS PAGE-->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-4 col-12 mb-4">
+          <img src="../practice/projec/icon-1.png" alt="">
+          <h5 class="mt-3">Secure Payments</h5>
+          <p class="text-muted">Your transactions are safe with us.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mb-4">
+         <img src="../practice/projec/icon-2.png" alt="">
+          <h5 class="mt-3">Free Delivery</h5>
+          <p class="text-muted">Get free delivery on all orders.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mb-4">
+          <img src="../practice/projec/icon-3.png" alt="">
+          <h5 class="mt-3">10 Days Return</h5>
+          <p class="text-muted">Hassle-free returns within 10 days.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 col-12 mb-4">
+         <img src="../practice/projec/icon-4.png" alt="">
+          <h5 class="mt-3">Offers & Gifts</h5>
+          <p class="text-muted">Exclusive offers and gifts for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--LATEST PRODUCTS-->
+      <section id="products" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center">Latest <span class="text-primary">Products</span></h2>
+          <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-1.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-10%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart-fill icon"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$16.99 <small class="text-muted"><s>$18.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-2.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-15%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart-fill icon"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$20.99 <small class="text-muted"><s>$25.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-3.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-5%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart-fill icon"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$1.99 <small class="text-muted"><s>$5.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-4.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-20%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart-fill icon"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$12.99 <small class="text-muted"><s>$15.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-5.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-8%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart-fill icon"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$8.99 <small class="text-muted"><s>$11.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-6.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-24%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart-fill icon"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$5.99 <small class="text-muted"><s>$7.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-7.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-27%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart-fill icon"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$8.99 <small class="text-muted"><s>$9.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-8.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-4%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart icon"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$10.99 <small class="text-muted"><s>$12.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-12 mb-4">
+                <div class="card text-center">
+                  <img src="../practice/projec/img-9.jpg" class="card-img-top" alt="Flower Pot">
+                  <div class="discount-badge">-37%</div>
+                  <div class="icon-container">
+                    <div>
+                    <i class="bi bi-heart-fill"></i></div>
+                   <div> <p>Add to cart</p></div>
+                    <div><i class="bi bi-sign-turn-right-fill icon"></i></div>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flower Pot</h5>
+                    <p class="text-danger">$14.99 <small class="text-muted"><s>$19.99</s></small></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!--CUSTOMER Review page-->
+      <section id="review" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Customer's <span class="text-primary">Review</span></h2>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="../practice/projec/pic-1.png" class="rounded-circle mr-3 custom-img" alt="User Image">
+                                <div>
+                                    <h5 class="card-title mb-0">John Deo</h5>
+                                    <small class="text-muted">Happy Customer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="../practice/projec/pic-2.png" class="rounded-circle mr-3 custom-img" alt="User Image">
+                                <div>
+                                    <h5 class="card-title mb-0">Jane Smith</h5>
+                                    <small class="text-muted">Satisfied Client</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 mb-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="../practice/projec/pic-3.png" class="rounded-circle mr-3 custom-img" alt="User Image">
+                                <div>
+                                    <h5 class="card-title mb-0">Alice Johnson</h5>
+                                    <small class="text-muted">Loyal Customer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </section>
+    <!--contact form-->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">Contact <span class="text-primary">Us</span></h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <form >
+              <div class="mb-3 input-container ">
+                <input type="text" class="form-control" placeholder="Name">
+                <span class="icon"><i class="bi bi-check-square-fill"></i></span>
+              </div>
+              <div class="mb-3 input-container">
+                <input type="email" class="form-control" placeholder="Email">
+                <span class="icon"><i class="bi bi-check-square-fill"></i></span>
+              </div>
+              <div class="mb-3 input-container">
+                <input type="text" class="form-control" placeholder="Number">
+                <span class="icon"><i class="bi bi-check-square-fill"></i></span>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark ">Send Message</button>
+            </form>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="../practice/projec/contact-img.svg" class="img-fluid" alt="Contact Illustration">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer part-->
+      <footer class="py-4 bg-dark text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-12">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Home</a></li>
+                <li><a href="#" class="text-light">About</a></li>
+                <li><a href="#" class="text-light">Products</a></li>
+                <li><a href="#" class="text-light">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <h5>Extra Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">My Account</a></li>
+                <li><a href="#" class="text-light">My Order</a></li>
+                <li><a href="#" class="text-light">My Favorite</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <h5>Locations</h5>
+              <ul class="list-unstyled">
+                <li>India</li>
+                <li>USA</li>
+                <li>Japan</li>
+                <li>France</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <h5>Contact Info</h5>
+              <p>+91 9105321123</p>
+              <p>shop@example.com</p>
+              <p>Bangalore, Karnataka, 560099</p>
+              <img src="../practice/projec/payment.png" alt="payment" >
+            </div>
+          </div>
+          <p class="text-center mt-3">Created by <strong>Uday Kumar Reddy</strong> | All Rights Reserved</p>
+        </div>
+      </footer>
+                                  
+    </div>
+    <script src="projec.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
